@@ -1,1 +1,0 @@
-tinyMCE.addToLang('ximagemanager',{title:'مدیریت تصاویر زوپس'});
