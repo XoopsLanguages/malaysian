@@ -1,0 +1,663 @@
+PERBEZAAN BAHASA
+=====================
+
+Di bawah ialah perbezaan bahasa daripada versi ke versi seterusnya.
+
+================================
+2025/03/30: Versi 2.7.0-Betas (sebelum ini dikeluarkan sebagai 2.5.12-Betas)
+================================
+/htdocs/modules/system/language/english/admin.php
+- tambah define('_AM_SYSTEM_MENUS', 'Menus');
+- tambah define('_AM_SYSTEM_MENUS_DESC', 'Urus menu navigasi tapak');
+
+/htdocs/modules/system/language/english/modinfo.php
+- tambah define('_MI_SYSTEM_MENUS_ACTIVE', 'Dayakan Sistem Menu');
+- tambah define('_MI_SYSTEM_MENUS_ACTIVE_DESC', 'Dayakan sistem pengurusan menu terbina dalam untuk navigasi tapak');
+
+/htdocs/modules/system/language/english/admin/menus.php (FAIL BAHARU)
+Medan
+- tambah define('_AM_SYSTEM_MENUS_NAV_MAIN', 'Menu Manager');
+- tambah define('_AM_SYSTEM_MENUS_NAV_BACK', 'Kembali ke Senarai Menu');
+- ​​tambah define('_AM_SYSTEM_MENUS_NAV_CATEGORY', 'Category View');
+- tambah define('_AM_SYSTEM_MENUS_NAV_TIPS', '<strong>Petua:</strong><ul>...');
+- tambah define('_AM_SYSTEM_MENUS_ACTIVE', 'Active');
+- tambah define('_AM_SYSTEM_MENUS_ACTIVE_YES', 'Enabled');
+- tambah define('_AM_SYSTEM_MENUS_ACTIVE_NO', 'Disabled');
+- tambah define('_AM_SYSTEM_MENUS_SAVED', 'Berjaya disimpan');
+- tambah define('_AM_SYSTEM_MENUS_DELETED', 'Berjaya dipadamkan');
+- tambah define('_AM_SYSTEM_MENUS_ORDER_SAVED', 'Pesanan disimpan');
+- tambah define('_AM_SYSTEM_MENUS_LISTCAT', 'List Categories');
+- tambah define('_AM_SYSTEM_MENUS_LISTITEM', 'Item Senarai');
+- ​​tambah define('_AM_SYSTEM_MENUS_ADDCAT', 'Tambah Kategori');
+- tambah define('_AM_SYSTEM_MENUS_EDITCAT', 'Edit Category');
+- tambah define('_AM_SYSTEM_MENUS_DELCAT', 'Delete Category');
+- tambah define('_AM_SYSTEM_MENUS_CATTITLE', 'Tajuk Kategori');
+- tambah define('_AM_SYSTEM_MENUS_CATTITLE_DESC', 'Nama pemalar bahasa (cth. MENUS_HOME) boleh digunakan di sini supaya label boleh diterjemahkan.');
+- tambah define('_AM_SYSTEM_MENUS_CATPREFIX', 'Awalan (HTML)');
+- tambah define('_AM_SYSTEM_MENUS_CATPREFIX_DESC', 'Penanda pilihan ditunjukkan sebelum tajuk kategori, seperti ikon Font Hebat.');
+- tambah define('_AM_SYSTEM_MENUS_CATSUFFIX', 'Suffix (HTML)');
+- tambah define('_AM_SYSTEM_MENUS_CATSUFFIX_DESC', 'Penanda pilihan ditunjukkan selepas tajuk kategori.');
+- tambah define('_AM_SYSTEM_MENUS_CATUL', 'URL');
+- tambah define('_AM_SYSTEM_MENUS_CATURL_DESC', 'Pautan untuk kategori itu sendiri, seperti "index.php" atau URL mutlak.');
+- ​​tambah define('_AM_SYSTEM_MENUS_CATTARGET', 'Sasaran Pautan');
+- tambah define('_AM_SYSTEM_MENUS_CATPOSITION', 'Position');
+- added define('_AM_SYSTEM_MENUS_DELCAT_CONFIRM', 'Adakah anda pasti mahu memadamkan kategori "%s" dan semua itemnya?');
+- tambah define('_AM_SYSTEM_MENUS_ADDITEM', 'Tambah Item');
+- tambah define('_AM_SYSTEM_MENUS_EDITITEM', 'Edit Item');
+- tambah define('_AM_SYSTEM_MENUS_DELITEM', 'Delete Item');
+- ​​tambah define('_AM_SYSTEM_MENUS_ITEMTITLE', 'Item Title');
+- tambah define('_AM_SYSTEM_MENUS_ITEMTITLE_DESC', 'Nama pemalar bahasa boleh digunakan di sini supaya label boleh diterjemahkan.');
+- tambah define('_AM_SYSTEM_MENUS_ITEMPREFIX', 'Awalan (HTML)');
+- ​​tambah define('_AM_SYSTEM_MENUS_ITEMPREFIX_DESC', 'Penanda pilihan ditunjukkan sebelum tajuk item, seperti ikon Font Hebat.');
+- tambah define('_AM_SYSTEM_MENUS_ITEMSUFFIX', 'Suffix (HTML)');
+- tambah define('_AM_SYSTEM_MENUS_ITEMSUFFIX_DESC', 'Penanda pilihan ditunjukkan selepas tajuk item. Menyokong pemegang tempat <{xoInboxCount}>.');
+- tambah define('_AM_SYSTEM_MENUS_ITEMURL', 'URL');
+- tambah define('_AM_SYSTEM_MENUS_ITEMTARGET', 'Sasaran Pautan');
+- tambah define('_AM_SYSTEM_MENUS_ITEMPOSITION', 'Position');
+- tambah define('_AM_SYSTEM_MENUS_ITEMPARENT', 'Item Induk');
+- tambah define('_AM_SYSTEM_MENUS_ITEMCATEGORY', 'Category');
+- ​​added define('_AM_SYSTEM_MENUS_DELITEM_CONFIRM', 'Adakah anda pasti mahu memadamkan item "%s" dan sub-itemnya?');
+- tambah define('_AM_SYSTEM_MENUS_TARGET_SELF', 'Same window');
+- tambah define('_AM_SYSTEM_MENUS_TARGET_BLANK', 'New window');
+- tambah define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY', 'Kumpulan yang boleh melihat kategori ini');
+- tambah define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_CATEGORY_DESC', 'Pengguna mesti mempunyai akses kategori sebelum mana-mana itemnya kelihatan.');
+- tambah define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM', 'Kumpulan yang boleh melihat item ini');
+- tambah define('_AM_SYSTEM_MENUS_PERMISSION_VIEW_ITEM_DESC', 'Item kebenaran disemak selepas kebenaran kategori induk.');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_CATNOTFOUND', 'Kategori tidak ditemui');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_CATPROTECTED', 'Tidak boleh memadam kategori yang dilindungi');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_CATINACTIVE', 'Tidak boleh aktifkan: kategori tidak aktif');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMNOTFOUND', 'Item not found');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMPROTECTED', 'Tidak boleh memadam item yang dilindungi');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMPARENT', 'Item induk tidak sah dipilih');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMCYCLE', 'Tidak boleh menetapkan induk: ia akan mencipta rujukan bulat');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMDEPTH', 'Kedalaman bersarang maksimum (3 tahap) melebihi');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_PARENTINACTIVE', 'Tidak boleh aktifkan: item induk tidak aktif');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_NOITEMS', 'Tiada item submenu dalam kategori ini.');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMEDIT', 'Dayakan item ini sebelum mengeditnya');
+- tambah define('_AM_SYSTEM_MENUS_ERROR_ITEMDISABLE', 'Dayakan item ini sebelum memadamkannya');
+- tambah define('MENUS_HOME', 'Home');
+- tambah define('MENUS_ADMIN', 'Administration');
+- tambah define('MENUS_ACCOUNT', 'Akaun');
+- tambah define('MENUS_ACCOUNT_EDIT', 'Edit Akaun');
+- tambah define('MENUS_ACCOUNT_LOGIN', 'Login');
+- ​​tambah define('MENUS_ACCOUNT_LOGOUT', 'Logout');
+- tambah define('MENUS_ACCOUNT_REGISTER', 'Daftar');
+- tambah define('MENUS_ACCOUNT_MESSAGES', 'Messages');
+- tambah define('MENUS_ACCOUNT_NOTIFICATIONS', 'Notifications');
+- tambah define('MENUS_ACCOUNT_TOOLBAR', 'Toolbar');
+
+/htdocs/modules/system/constants.php
+- tambah define('XOOPS_SYSTEM_MENUS', 19);
+
+/htdocs/modules/system/language/english/blocks.php
+-added define('_MB_SYSTEM_WAITING_CONTENT_DEPRECATED', "Sekat 'Kandungan Menunggu' ditamatkan sejak XOOPS 2.5.11, sila gunakan modul Menunggu");
+
+/htdocs/install/language/english/welcome.php
+- versi PHP & MySQL yang dikemas kini
+
+/htdocs/modules/pm/language/english/main.php
+- updated define('_PM_EMAIL_DESC', 'Dear %s, ini ialah mesej yang dipindahkan daripada akaun anda di ' . $GLOBALS['xoopsConfig']['sitename']);
+- updated define('_PM_EMAIL_DESC', 'Dear %s, ini ialah mesej yang dipindahkan daripada akaun anda di ' . $GLOBALS['xoopsConfig']['sitename']);
+
+/htdocs/language/english/user.php
+- updated define('_US_SORRYNOTFOUND', 'Maaf, tiada maklumat pengguna yang sepadan ditemui.');
+- updated define('_US_SORRYNOTFOUND', 'Jika akaun sepadan dengan maklumat yang diberikan, kami akan memproses permintaan anda. Jika anda tidak menerima e-mel sebentar lagi, sila semak folder spam anda atau hubungi pentadbir tapak.');
+
+- dikemas kini define('_US_PWDMAILED', 'Kata laluan untuk %s dihantar.');
+- updated define('_US_PWDMAILED', 'Jika akaun wujud untuk e-mel ini, anda akan menerima arahan tetapan semula kata laluan. Semak folder spam anda jika perlu atau hubungi pentadbir tapak.');
+
+- dikemas kini define('_US_CONFMAIL', 'E-mel pengesahan untuk %s dihantar.');
+- updated define('_US_CONFMAIL', 'Jika akaun wujud untuk e-mel ini, anda akan menerima arahan tetapan semula kata laluan. Semak folder spam anda jika perlu atau hubungi pentadbir tapak.');
+
+/htdocs/class/xoopseditor/tinymce5/language/english.php
+- dinamakan semula _XOOPS_EDITOR_TINYMCE_LANGUAGE5 kepada _XOOPS_EDITOR_TINYMCE5_LANGUAGE
+
+/htdocs/modules/system/themes/transition/language/english/admin.php
+- dinamakan semula _OXYGEN_Server_API kepada _OXYGEN_SERVER_API
+
+/htdocs/modules/system/language/english/admin/preferences.php.
+- tambah define('_MD_AM_SENDMAIL_NOT_FOUND', 'Sendmail binary not found. Sila semak konfigurasi pelayan anda.');
+- tambah define('_MD_AM_SENDMAIL_HELP_MISSING_BIN', 'Tiada binari serasi hantaran yang sah dikesan. Pasang MTA (cth. Postfix, msmtp) atau tukar kepada SMTP dalam Keutamaan.');
+
+/htdocs/modules/system/language/english/admin/users.php
+- tambah define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Unknown group');
+
+/htdocs/modules/system/language/english/comment.php
+- tambah define('_CM_ADDCOMMENT', 'Tambah Ulasan');
+
+
+/htdocs/install/language/english/install.php
+- tambah define('_WEBSITE_NAME', 'XOOPS Site');
+- tambah define('_SLOGAN_WEBSITE_SLOGAN', 'Gunakan sahaja!');
+- tambah define('_WEBSITE_META_KEYWORDS', 'xoops, rangka kerja aplikasi web, cms, sistem pengurusan kandungan');
+- tambah define('_WEBSITE_FOOTER', "Dikuasakan oleh XOOPS © 2001-{X_YEAR} <a href='https://xoops.org' rel='external' title='The XOOPS Project'>The XOOPS Project</a>");
+- tambah define('_HAK_CIPTA_LAMAN WEB', 'Hak Cipta © 2001-{X_YEAR}');
+- tambah define('_WEBSITE_DESCRIPTION', 'XOOPS ialah skrip portal sumber terbuka berasaskan Berorientasikan Objek dinamik yang ditulis dalam PHP.');
+- tambah define('_WEBSITE_CENSOR_REPLACE', 'OOPS');
+
+
+================================
+2023/10/01: Versi 2.5.11-Akhir
+================================
+/language/english/uploader.php
+-added define('_ER_UP_MODE_NOT_CHANGED', 'Fail dimuat naik, tetapi tidak boleh menukar mod');
+
+================================
+2023/10/01: Versi 2.5.11-RC3
+================================
+
+FAIL BERTUKAR:
+upgrade/language/english/upgrade.php
+naik taraf/bahasa/english/smarty3.php
+
+htdocs/class/xoopseditor/tinymce/language/english.php
+- tambah define('_FAILGETIMG', 'Gagal mendapatkan imej %s');
+
+/htdocs/modules/system/language/english/modinfo.php
+- tambah define('_MI_DEFAULT_NOTIFICATION_METHOD_DISABLE', 'Lumpuhkan buat sementara waktu');
+- tambah define('_MI_DEFAULT_NOTIFICATION_METHOD_EMAIL', 'Emel');
+- ​​tambah define('_MI_DEFAULT_NOTIFICATION_METHOD_PM', 'Private message');
+
+/htdocs/modules/system/language/english/admin/preferences.php
+- tambah define('_MD_AM_DEFAULT_NOTIFICATION_METHOD', 'Default notification method');
+- tambah define('_MD_AM_DEFAULT_NOTIFICATION_METHOD_DESC', 'Untuk pengguna baharu apabila mereka melanggan pemberitahuan daripada, mis., forum.');
+- tambah define('_MD_AM_MODULEPREF',
+
+
+================================
+2023/03/19: Versi 2.5.11-RC1
+================================
+
+FAIL BERTUKAR:
+htdocs/language/english/global.php
+- tambah define('_DB_QUERY_ERROR', 'Query Failed! SQL: %s - Ralat: ');
+- tambah define('_PRINT', 'Cetak');
+- tambah define('_PDF', 'PDF');
+- ​​tambah define('_OFF', 'Off');
+
+================================
+2021/09/02: Versi 2.5.11-Betas
+================================
+
+FAIL BERTUKAR:
+htdocs/language/english/admin.php
+- tambah define('_AD_WARNING_NO_XML', 'Sambungan XML PHP diperlukan untuk fungsi ini.');
+
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- tambah define('_AM_ADMINSTATS_LAST_MONTH', 'Last Month');
+- tambah define('_AM_ADMINSTATS_LAST_WEEK', 'Last Week');
+- tambah define('_AM_ADMINSTATS_LAST_DAY', 'Last Day');
+- ​​tambah define('_AM_ADMINSTATS_LAST_HOUR', 'Last Hour');
+
+htdocs/language/english/global.php
+- tambah define('_PRINT', 'Cetak');
+- tambah define('_PDF', 'PDF');
+- ​​tambah define('_OFF', 'Off');
+- tukar define('_ON', 'On'); //dari 'pada'
+
+htdocs/language/english/global.php
+- ​​tukar define('_SAIZ', 'Saiz'); // saiz fon
+- tukar define('_FONT', 'Font'); // keluarga fon
+- tukar define('_COLOR', 'Color'); // warna fon
+
+htdocs/install/language/english/install.php
+- tambah define('ERR_COPY_CONFIG_FILE', 'Tidak dapat menyalin fail konfigurasi %s');
+
+htdocs/install/language/english/welcome.php
+- menukar versi PHP & MySQL yang disyorkan, pautan ditukar kepada "https:"
+
+htdocs/modules/system/language/english/admin/preferences.php
+- tukar define('_MD_AM_SMTPHOSTDESC', 'Sama ada satu nama hos atau berbilang nama hos yang dipisahkan koma bertitik.<br>Anda juga boleh menentukan port yang berbeza untuk setiap hos dengan menggunakan format ini: [nama hos:port] (cth. "smtp1.example.com:25;<brt.com juga boleh menaip"). contohnya: (cth. "tls://smtp1.example.com:587;ssl://smtp2.example.com:465").<br>Hos akan dicuba mengikut urutan.');
+
+htdocs/modules/system/language/english/help/blocksadmin.html
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- tukar define('_AM_SYSTEM_MODULES_ADMIN', 'XOOPS Module Administration');
+
+FAIL BAHARU:
+htdocs/themes/xswatch4/language/english/main.php
+Bermula sebagai salinan xswatch/language/english/main.php kemudian:
+- tambah define('THEME_TOOLBAR_DEBUGMODE', 'Mod Nyahpepijat');
+- tambah define('THEME_TOOLBAR_THIS_MODULE', 'This Module');
+- tambah define('THEME_PERMISSIONS_LEGEND', 'Permissions &amp; Legend');
+- tambah define('THEME_INBOX_ALERT', 'PM Alert');
+- tambah define('THEME_INBOX_LINK', 'Klik di sini untuk melihat Peti Masuk anda!');
+- tambah define('THEME_EVENT_DOWNLOADS', 'Event Downloads');
+- ​​tambah define('THEME_FILE_NAME', 'Fail');
+- tambah define('THEME_FILE_SIZE', 'Size');
+- tambah define('THEME_CONTROL_NEXT', 'Next');
+- tambah define('THEME_CONTROL_PREVIOUS', 'Previous');
+
+htdocs/language/english/user.php
+- tambah define('_US_DESCRIPTIONMIN', 'Panjang minimum yang diperlukan: %s');
+- tambah define('_US_DESCRIPTIONMAX', 'Panjang maksimum: %s');
+
+htdocs/modules/system/language/english/admin/mailusers.php
+- tambah define('_AM_SYSTEM_MAILUSERS_MAILTAGS5', '{X_NAME} akan mencetak nama atau nyahnama jika kosong');
+
+htdocs/modules/system/language/english/admin/images.php
+- tambah define("_AM_SYSTEM_IMAGES_SCATDELNG","Tidak dapat memadamkan kategori ini");
+
+htdocs/modules/system/language/english/admin/modulesadmin.php
+- ​​tambah define('_MODULES_AM_SYSTEM_INSTALL_THISMODULE', 'Pentadbir Modul Ini');
+
+FAIL DIPADAM:
+htdocs/modules/system/language/english/admin/users.php
+- deleted define('_AM_SYSTEM_USERS_MODIFYUSER', 'Ubah suai Pengguna');
+- deleted define('_AM_SYSTEM_USERS_DELUSER', 'Delete User');
+- deleted define('_AM_SYSTEM_USERS_GO', 'Go!');
+
+================================
+2019/04/29: Versi 2.5.10 Akhir
+================================
+TAMBAH/DIPADAM TAKRIF:
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- tambah define('_AM_LABEL_BAN_BY_IP', 'Haramkan IP pada rekod yang disemak:');
+- tambah define('_AM_BUTTON_BAN_BY_IP', 'IP Ban!');
+- tambah define('_AM_JS_BANCONFIRM', 'IP Ban OK?');
+- tambah define('_AM_MSG_BANNEDIP', 'IP dilarang');
+- tambah define('_AM_ADMINSTATS_TITLE', 'Ringkasan Log Pelindung');
+
+htdocs/xoops_lib/modules/protector/language/english/modinfo.php
+- tambah define($constpref . '_ADMINSTATS', 'Overview');
+- ​​tambah define($constpref . '_BANIP_TIME0DSC', 'Masa penggantungan dalam saat untuk larangan IP automatik');
+
+htdocs/language/english/uploader.php
+- tambah define('_ER_UP_INDEXNOTSET', 'Cuba untuk mengambil berbilang fail, indeks mesti ditetapkan.');
+
+htdocs/language/english/admin.php
+- tambah define('_AD_WARNING_OLD_PHP', 'AMARAN: Pertimbangkan untuk menaik taraf kepada versi PHP yang lebih baharu. Versi %s atau lebih baharu disyorkan dan akan diperlukan dalam versi XOOPS akan datang.');
+
+TAKRIF BERUBAH
+htdocs/xoops_lib/modules/protector/language/english/admin.php
+- define('_AM_TXT_HOWTOCHANGEDB',"Jika anda mahu menukar awalan,<br> edit %s/data/secure.php secara manual.<br><br>define('XOOPS_DB_PREFIX', '<b>%s</b>');");
+
+htdocs/install/english/welcome.php
+- menukar versi PHP yang disyorkan, menambah bahagian Nota Khas untuk SELinux
+
+/home/richard/sites/x258i/htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- dalam takrifan '_AM_MODULEADMIN_ADMIN_FOOTER', menukar pautan XOOPS kepada 'https://xoops.org'
+
+FAIL BAHARU:
+n/a
+
+===============================
+2017/08/01: Versi 2.5.9 Akhir
+===============================
+TAMBAH/DIPADAM MENENTUKAN
+
+htdocs/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- tambah define('_AM_MODULEADMIN_ABOUT_AMOUNT', 'Amount');
+- tambah define('_AM_MODULEADMIN_ABOUT_AMOUNT_TTL', 'Sila masukkan amaun USD cth. $25.00');
+- tambah define('_AM_MODULEADMIN_TENTANG_JUMLAH_CURRENCY', 'USD');
+- tambah define('_AM_MODULEADMIN_TENTANG_JUMLAH_CADANGAN', '25.00');
+- tambah define('_AM_MODULEADMIN_ABOUT_AMOUNT_PATTERN', '\\$?[0-9]+(,[0-9]{3})*(\\.[0-9]{0,2})?$');
+- tambah define('_AM_MODULEADMIN_ABOUT_DONATE_IMG_ALT', 'Derma menggunakan PayPal atau kad kredit utama dalam talian!');
+
+htdocs/install/language/english/install.php
+*NOTA* Pemasang telah diubah dengan ketara, jadi fail ini harus disemak dengan teliti
+- tambah define("CURL_HTTP", "Pustaka URL Pelanggan (cURL)");
+- tambah define('XOOPS_COOKIE_DOMAIN_LABEL', 'Domain Kuki untuk Laman Web');
+- tambah define('XOOPS_COOKIE_DOMAIN_HELP', 'Domain untuk menetapkan kuki. Mungkin kosong, hos penuh daripada URL (www.example.com) atau domain berdaftar tanpa subdomain (example.com) untuk dikongsi merentas subdomain (www.example.com dan blog.example.com.)');
+- tambah define('INTL_SUPPORT', 'Fungsi pengantarabangsaan');
+- tambah define('XOOPS_SOURCE_CODE', "XOOPS on GitHub");
+- tambah define('XOOPS_INSTALLING', 'Installing');
+- tambah define('XOOPS_ERROR_ENCOUNTERED', 'Ralat');
+- tambah define('XOOPS_ERROR_SEE_BELOW', 'Lihat di bawah untuk mesej.');
+- ​​tambah define('MODULES_AVAILABLE', 'Available Modules');
+- tambah define('INSTALL_MODUL_INI', 'Tambah %s');
+
+htdocs/install/language/english/finish.php
+- tukar untuk merujuk pengguna baharu ke xoops.org untuk mendapatkan maklumat tentang modul dan tema
+
+htdocs/language/english/global.php
+- tambah define('_UPLOAD', 'Upload');
+- tambah define('_SELECTFILES', 'Pilih fail');
+- tambah define('_DROPFILESHERE', 'Lepaskan fail di sini');
+- tambah define('_RETRY', 'Retry');
+- tambah define('_OK', 'Ok');
+- tambah define('_FORMATPROGRESS', '{peratus}% daripada {total_size}');
+- ​​tambah define('_FAILUPLOAD', 'Muat naik gagal!');
+- tambah define('_MENUNGGU UNTUK RESPON', 'Memproses...');
+- tambah define('_PAUSED', 'Paused');
+- tambah define('_PROCESSINGDROPPEDFILES', 'Processing dropped files...');
+- tambah define('_TYPEERROR', '{file} mempunyai sambungan yang tidak sah. Sambungan yang sah: {extensions}!');
+- tambah define('_SIZEERROR', '{file} terlalu besar, saiz fail maksimum ialah {sizeLimit}!');
+- tambah define('_MINSIZEERROR', '{file} terlalu kecil, saiz fail minimum ialah {minSizeLimit}!');
+- tambah define('_EMPTYERROR', '{file} kosong, sila pilih fail sekali lagi tanpa fail!');
+- ​​tambah define('_NOFILESERROR', 'Tiada fail untuk dimuat naik!');
+- tambah define('_TOOMANYITEMSERROR', 'Terlalu banyak item ({netItems}) akan dimuat naik. Had item ialah {itemLimit}!');
+- tambah define('_MAXHEIGHTIMAGEERROR', 'Imej terlalu tinggi!');
+- tambah define('_MAXWIDTHIMAGEERROR', 'Imej terlalu lebar!');
+- tambah define('_MINHEIGHTIMAGEERROR', 'Imej tidak cukup tinggi!');
+- tambah define('_MINWIDTHIMAGEERROR', 'Imej tidak cukup lebar!');
+- added define('_RETRYFAILTOOMANYITEMS', 'Cuba semula gagal - anda telah mencapai had fail anda!');
+- ​​added define('_ONLEAVE', 'Fail sedang dimuat naik, jika anda keluar sekarang, muat naik akan dibatalkan!');
+- tambah define('_UNSUPPORTEDBROWSERIOS8SAFARI', 'Ralat tidak dapat dipulihkan - penyemak imbas ini tidak membenarkan sebarang jenis muat naik fail disebabkan pepijat serius dalam iOS8 Safari. Sila gunakan iOS8 Chrome sehingga Apple membetulkan isu ini!');
+
+htdocs/language/english/uploader.php
+- tambah define('_ER_UP_INISIZE', 'Fail yang dimuat naik melebihi arahan upload_max_filesize dalam php.ini');
+- tambah define('_ER_UP_FORMSIZE', 'Fail yang dimuat naik melebihi arahan MAX_FILE_SIZE yang dinyatakan dalam borang HTML');
+- tambah define('_ER_UP_PARTIAL', 'Fail yang dimuat naik hanya dimuat naik sebahagian sahaja');
+- tambah define('_ER_UP_NOFILE', 'Tiada fail dimuat naik');
+- tambah define('_ER_UP_NOTMPDIR', 'Tiada folder sementara');
+- tambah define('_ER_UP_CANTWRITE', 'Gagal menulis fail ke cakera');
+- tambah define('_ER_UP_EXTENSION', 'Muat naik fail dihentikan oleh sambungan. Lihat phpinfo()');
+- tambah define('_ER_UP_UNKNOWN', 'Ralat muat naik tidak diketahui');
+
+htdocs/language/english/user.php
+- ​​deleted define('_US_USECOOKIE', 'Simpan nama pengguna saya dalam kuki selama 1 tahun');
+
+htdocs/modules/profile/language/english/admin.php
+- tambah define('_PROFILE_AM_CANNOTDEACTIVATEWEBMASTERS', 'Anda tidak boleh menyahaktifkan akaun Juruweb');
+
+htdocs/modules/system/language/english/admin/comments.php
+- tambah define('_MP_DELETECOUNT', 'Bilangan ahli dalam kumpulan terlalu besar ( > 4,000) ');
+
+htdocs/modules/system/language/english/admin/userrank.php
+- tambah define('_AM_SYSTEM_USERRANK_ERROR', 'Error');
+
+upgrade/language/english/upgrade.php
+- tambah define('_LANGUAGE', 'Bahasa');
+- tambah define('_SOKONGAN', 'Sokongan');
+- tambah define('_XOOPS_SOURCE_CODE', 'XOOPS on GitHub');
+- tambah define('_PATCH_COUNT', 'Patches Sets');
+- tambah define('_USERNAME_PLACEHOLDER', 'Your Username');
+- tambah define('_PASSWORD_PLACEHOLDER', 'Kata Laluan Anda');
+- tambah define('_CONTINUE', 'Continue');
+- tambah define('XOOPS_ERROR_ENCOUNTERED', 'Ralat');
+- tambah define('XOOPS_ERROR_SEE_BELOW', 'Lihat di bawah untuk mesej.');
+
+htdocs/themes/xbootstrap/language/english/main.php
+- tambah define("THEME_USER_WELCOME", "Welcome");
+
+FAIL BAHARU:
+- htdocs/modules/system/themes/transition/language/english/admin.php
+- htdocs/modules/system/themes/transition/language/english/localsupport.php
+
+- naik taraf/bahasa/bahasa Inggeris/
+*NOTA* Kod naik taraf telah diubah dengan ketara, jadi fail ini harus disemak dengan teliti
+- mengalihkan semua setiap fail bahasa patch dari direktori patch ke naik taraf/bahasa/*
+  iaitu upgrade/upd-2.0.18-to-2.3.0/language/english.php menjadi
+  upgrade/language/english/upd-2.0.18-to-2.3.0.php
+
+- upgrade/language/english/support.php (sama seperti htdocs/install/language/english/support.php)
+- naik taraf/bahasa/english/welcome.php
+
+===============================
+2016/05/27: Versi 2.5.8
+===============================
+TAMBAH/DIPADAM MENENTUKAN
+
+/install/language/english/install.php
+/modules/system/language/english/admin/modulesadmin.php
+- tambah define('_AM_SYSTEM_MODULES_INSTALL_MORE',"Pasang lebih banyak modul");
+
+/modules/system/language/english/admin/users.php
+define('_AM_SYSTEM_USERS_ACTIVATE', 'Activate User');
+
+/modules/system/language/english/blocks.php
+define('_MB_SYSTEM_BLOCK_HEIGHT',"Ketinggian Blok (garisan)");
+
+install/language/english/install.php
+define('CHMOD_CHGRP_REPEAT', 'Cuba semula');
+define('CHMOD_CHGRP_IGNORE', 'Gunakan Bagaimanapun');
+define('CHMOD_CHGRP_ERROR', 'Pemasang mungkin tidak dapat menulis fail konfigurasi %1$s.<p>PHP sedang menulis fail di bawah pengguna %2$s dan kumpulan %3$s.<p>Yang mengerikan
+
+TAKRIF BERUBAH
+xoops_lib/modules/protector/language/english/modinfo.php
+define($constpref . '_HIJACK_TOPBITDSC', ...
+
+/modules/system/themes/default/language/english/admin.php
+define('_OXYGEN_CODESVN', 'Repositori Kod');
+
+install/language/english/install.php
+define('SAVED_MAINFILE', 'Tetapan disimpan');
+define('ERR_NEED_WRITE_ACCESS', 'Pelayan mesti diberi akses tulis kepada fail dan folder berikut<br />(iaitu <em>chmod 775 directory_name</em> pada pelayan UNIX/LINUX)<br />Jika ia tidak tersedia atau tidak dibuat dengan betul, sila buat secara manual dan tetapkan kebenaran yang betul.');
+define('ERR_COPY_MAINFILE', 'Tidak dapat menyalin fail pengedaran ke %s');
+define('ERR_WRITE_MAINFILE', 'Tidak dapat menulis ke dalam %s. Sila semak kebenaran fail dan cuba lagi.');
+define('ERR_READ_MAINFILE', 'Tidak dapat membuka %s untuk membaca');
+
+/modules/system/themes/zetadigme/language/english/admin.php
+define('_MD_CODESVN', 'Repositori Kod');
+
+FAIL BAHARU:
+/language/english/stopwords.php
+/language/english/xmf.php
+
+DIKEMASKINI Contoh kelas XoopsMailerLocal:
+htdocs/language/english/xoopsmailerlocal.php
+
+===============================
+2014/06/14: Versi 2.5.7 Akhir
+===============================
+TAMBAH/DIPADAM MENENTUKAN
+
+/install/language/english/install.php
+- added define('WRITTEN_LICENSE',"Written XOOPS %s License Key: <strong>%s</strong>");
+
+===============================
+2014/03/18: Versi 2.5.7 RC1
+===============================
+TAMBAH/DIPADAM MENENTUKAN
+
+/modules/system/language/english/admin.php
+- tambah define('_AM_SYSTEM_USAGE',"Penggunaan");
+- tambah define('_AM_SYSTEM_ACTIVE',"Active");
+
+
+===============================
+2012/04/15: Versi 2.5.5
+===============================
+TAMBAH/DIPADAM MENENTUKAN
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+- tambah define("_AM_MODULEADMIN_HOME", "Home");
+- tambah define("_AM_MODULEADMIN_DASHBOARD", "Dashboard");
+- tambah define("_AM_MODULEADMIN_TENTANG", "Perihal");
+- tambah define("_AM_MODULEADMIN_PERMISSIONS", "Permissions");
+- tambah define("_AM_MODULEADMIN_TENTANG_RELEASEDATE","Dikeluarkan: ");
+- tambah define("_AM_MODULEADMIN_ABOUT_AUTHOR","Pengarang: ");
+- tambah define("_AM_MODULEADMIN_TENTANG_KREDIT","Kredit: ");
+- tambah define("_AM_MODULEADMIN_TENTANG_LESEN","Lesen: ");
+- tambah define("_AM_MODULEADMIN_ABOUT_AUTHOR_NAME","Nama pengarang: ");
+- tambah define("_AM_MODULEADMIN_TENTANG_AUTHOR_INFO","Maklumat Pengarang");
+- tambah define("_AM_MODULEADMIN_ADMIN_FOOTER", "<div class='center smallsmall italic pad5'>Modul ini diselenggara oleh <a class='tooltip' rel='external' href='http://xoops.org/' title='Visit XOOPS Community'>XOOPS Community"</a></div>");
+
+/language/english/calendar.php
+- tambah define("_CAL_FORMAT","Y-m-d");
+
+/xoops_lib/modules/protector/language/english/modinfo.php
+
+- tambah define($constpref."_ADMINHOME","Home");
+- tambah define($constpref."_ADMINABOUT","About");
+- tambah define($constpref.'_STOPFORUMSPAM_ACTION','Hentikan Spam Forum');
+- tambah define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Menyemak data POST terhadap spammer yang didaftarkan pada pangkalan data www.stopforumspam.com. Memerlukan php CURL lib.');
+
+
+/install/language/english/install.php
+- tambah define( "FILTER_FUNCTIONS", "Fungsi penapis");
+
+/language/english/global.php
+- tambah define('_DBDATESTRING', 'Y-m-d');
+- tambah define('_DBTIMESTRING', 'H:i:s');
+- tambah define('_DBTIMESTAMPSTRING', 'Y-m-d H:i:s');
+
+/language/english/pmsg.php
+- tambah define('_PM_READ', 'Sudah Baca');
+
+/modules/system/language/english/admin.php
+- tambah define("_AM_SYSTEM_UNINSTALL","Nyahpasang");
+
+LIHAT JUGA:
+/modules/profile/docs/lang_diff.txt
+
+===============================
+2011/11/17: Versi 2.5.4
+===============================
+
+/Frameworks/moduleclasses/moduleadmin/language/english/main.php
+_AM_MODULEADMIN_CONFIG_DB
+_AM_MODULEADMIN_CONFIG_ADMIN
+
+===============================
+2011/10/10: Versi 2.5.4 RC
+===============================
+
+FAIL BAHARU:
+modules/pm/language/english/help/help.html
+modules/profile/language/english/help/help.html
+modules/protector/language/english/help/help.html
+
+TAMBAH/DIPADAM MENENTUKAN
+
+/language/english/pmsg.php
+delete define('_PM_READ', 'Sudah Baca');
+
+/language/english/user.php
+- tambah define('_US_SKYPE', 'Skype');
+- tambah define('_US_FACEBOOK', 'Facebook');
+
+/modules/pm/language/english/main.php
+- deleted define("_PM_RECEIVE","RECEIVE");
+- deleted define("_PM_POST","POST");
+- deleted define("_PM_READBOX","READBOX");
+- deleted define("_PM_RSAVEBOX","Receive_SAVEBOX");
+- deleted define("_PM_SENTBOX","SENTBOX");
+- deleted define("_PM_PSAVEBOX","Post_SAVEBOX");
+- deleted define("_PM_SAVED","Berjaya Disimpan");
+- deleted define("_PM_TOC","Dari: ");
+- deleted define("_PM_UID","ID Pengirim");
+
+/language/english/findusers.php
+- tambah define('_MA_USER_FACEBOOK', 'Facebook Link'); //UNTUK BUAT
+- tambah define('_MA_USER_SKYPE', 'Skype Link');//TO DO
+
+/modules/pm/language/english/modinfo.php
+- tambah define("_PM_MI_ABOUT", "About");
+
+/modules/profile/language/english/admin.php
+- tambah define('_PROFILE_AM_ACTION', 'Action');
+
+/modules/profile/language/english/modinfo.php
+- tambah define("_PROFILE_MI_TENTANG", "Perihal");
+- tambah define("_PROFILE_MI_HOME", "Home");
+
+
+/modules/system/language/english/admin/preferences.php
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_GENERAL","Tetapan Umum");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_USERSETTINGS","Tetapan Maklumat Pengguna");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_METAFOOTER","Meta Tag and Footer");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_CENSOR","Pilihan Penapisan Perkataan");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_SEARCH","Pilihan Carian");
+- ​​deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_MAILER","Persediaan E-mel");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_MD_AM_AUTHENTICATION","Pilihan Pengesahan");*/
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_GENERAL","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_USERSETTINGS","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_METAFOOTER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_CENSOR","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_SEARCH","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_MAILER","A faire");
+- deleted define("_AM_SYSTEM_PREFERENCES_NAV_TIPS_MD_AM_AUTHENTICATION","A faire");
+- deleted define("_MD_AM_LOADINGIMG", "Paparan memuatkan... imej?");
+- deleted define("_MD_AM_CHNGUTHEME", "Tukar semua tema pengguna");
+
+/modules/system/language/english/admin/users.php
+- tambah define("_AM_SYSTEM_USERS_ACCEPT_EMAIL","Terima e-mel daripada Pentadbir");
+
+- deleted define("_AM_SYSTEM_USERS_NAV_MANAGER","Pengurus Pengguna");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Catatan Pengguna");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Stories");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Ulasan");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Tekan butang di bawah untuk menyegerakkan data jika anda fikir maklumat siaran pengguna di atas nampaknya tidak menunjukkan status sebenar");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Tidak dapat jumlah komen");
+- deleted define("_AM_SYSTEM_USERS_CNGST","Tidak dapat jumlah cerita");
+- deleted define("_SENARAI_PENGGUNA_SYSTEM_AM","Senarai");
+- deleted define("_AM_SYSTEM_USERS_USERPOST","Catatan Pengguna");
+- deleted define("_AM_SYSTEM_USERS_STORIES","Stories");
+- deleted define("_AM_SYSTEM_USERS_COMMENTS","Ulasan");
+- deleted define("_AM_SYSTEM_USERS_PTBBTSDIYT","Tekan butang di bawah untuk menyegerakkan data jika anda rasa maklumat siaran pengguna di atas tidak menunjukkan status sebenar");
+- deleted define("_AM_SYSTEM_USERS_CNGTCOM","Tidak dapat semua komen");
+- deleted define("_AM_SYSTEM_USERS_CNGST","Tidak dapat semua cerita");
+- deleted define("_SENARAI_PENGGUNA_SYSTEM_AM","Senarai");
+
+xoops_lib/modules/protector/language/english/admin.php
+- tambah define("_AM_ADV_REGISTERGLOBALS2","dan letakkan di dalamnya baris di bawah:");
+
+FAIL BERTUKAR:
+
+/modules/system/language/english/admin/users.php (Mamba)/
+/language/english/mail_template/activated.tpl
+/language/english/mail_template/adminactivate.tpl
+/language/english/mail_template/lostpass1.tpl
+/language/english/mail_template/lostpass2.tpl
+/language/english/mail_template/register.tpl
+/language/english/mail_template/welcome.tpl
+/modules/system/language/english/admin/avatars.php
+/modules/system/language/english/admin/banners.php
+/modules/system/language/english/admin/blocksadmin.php
+/modules/system/language/english/admin/comments.php
+/modules/system/language/english/admin/preferences.php
+/modules/system/language/english/admin/userrank.php
+/modules/system/language/english/admin/users.php
+/modules/system/language/english/help/mailusers.html
+/modules/system/language/english/help/preferences.html
+/modules/system/language/english/admin.php
+/modules/system/language/english/blocks.php
+/modules/system/language/english/modinfo.php
+/modules/system/themes/default/language/english/admin.php
+/modules/system/themes/zetadigme/language/english/admin.php
+/themes/suico/language/english/main.php
+/themes/zetagenesis/language/english/main.php
+
+
+===============================
+2011/10/05: Versi 2.5.4 Beta
+===============================
+- mengemas kini beberapa terjemahan bahasa Inggeris (DCrussader/Mamba)
+- bahasa/bahasa Inggeris/kalendar yang dipadamkan.php _CAL_DEF_DATE_FORMAT
+- bahasa/bahasa Inggeris/kalendar yang dipadamkan.php _CAL_TT_DATE_FORMAT
+- modul/sistem/bahasa/english/admin/users.php dipadamkan _AM_SYSTEM_USERS_NAV_MANAGER
+- modul/sistem/bahasa/english/admin/preferences dipadamkan.php _MD_AM_LOADINGIMG
+- modul/sistem/bahasa/english/admin/preferences dipadamkan.php _MD_AM_CHNGUTHEME
+- modul dipadamkan/pm/language/english/admin/main.php _PM_RECEIVE, _PM_POST, _PM_READBOX, _PM_RSAVEBOX, _PM_SENTBOX, _PM_PSAVEBOX, _PM_SAVED, _PM_TOC
+- ditambahkan /modules/profile/language/english/admin.php _PROFILE_AM_ACTION
+- menambahkan /modules/profile/language/english/main.php _PROFILE_MI_TENTANG
+- ditambahkan /modules/profile/language/english/main.php _PROFILE_MI_HOME
+- ditambahkan /modules/pm/language/english/modinfo.php _PM_MI_TENTANG
+- menambah modul/sistem/bahasa/english/admin/users.php _AM_SYSTEM_USERS_FACEBOOK, _AM_SYSTEM_USERS_SKYPE
+- menambahkan bahasa/english/user.php _US_SKYPE, _US_FACEBOOK
+
+xoops_lib/modules/protector/language/english/modinfo.php
+- tambah define($constpref.'_STOPFORUMSPAM_ACTION','Hentikan Spam Forum');
+- tambah define($constpref.'_STOPFORUMSPAM_ACTIONDSC','Menyemak data POST terhadap spammer yang didaftarkan pada pangkalan data www.stopforumspam.com. Memerlukan php CURL lib.');
+
+
+
+===============================
+2011/09/06: Versi 2.5.2 RC
+===============================
+ - menambahkan bahasa/english/misc.php _MSC_CLICK_TO_OPEN_IMAGE, _MSC_RESIZED_IMAGE, _MSC_ORIGINAL_IMAGE
+ - menambahkan bahasa/english/pmsg.php _PM_SURE_TO_DELETE, _PM_READ
+ - menambah modul/pm/language/english/admin/main.php _PM_READ, _PM_SUBJECT_ICONS
+ - modules\system/language/english/admin/tplsets.php _AM_SYSTEM_TEMPLATES_SET
+ - modul/sistem/tema/default/language/english/admin/admin.php dialih keluar _OXYGEN_XOOPSENGINE
+ - mengalih keluar modul/sistem/bahasa/english/admin/blocksadmin.php _AM_SYSTEM_BLOCKS_SAVE
+ - menambahkan bahasa/english/calendar.php _CAL_DEF_DATE_FORMAT
+ - menambahkan bahasa/english/calendar.php _CAL_TT_DATE_FORMAT
+
+===============================
+2011/03/15: Versi 2.5.1 RC
+===============================
+
+Pemalar Bahasa Ditambah:
+  modules/system/language/english/admin/images.php _AM_SYSTEM_IMAGES_URL
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XOOPSENGINE
+
+Pemalar Bahasa yang Diubah Suai:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_ABOUT_TEXT, _OXYGEN_WEBSITE
+  modules/system/language/english/helper/help_center.html, modulesadmin.html
+
+Pemalar Bahasa Dialih keluar:
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSYGEN_TEXT_SOURCEF _OXYGEN_POWERED_BY
+  modules/system/themes/default/language/english/admin/admin.php _OXYGEN_XGIFTSHOP, _OXYGEN_XDONATIONS, _OXYGEN_XDONATIONS_TEXT, _OXYGEN_KEY, _OXYGEN_LICENSYGEN_TEXT_SOURCEF _OXYGEN_POWERED_BY
