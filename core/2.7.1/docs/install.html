@@ -1,0 +1,135 @@
+html AWAM "-//W3C//DTD HTML 4.01 Peralihan//EN"
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>Arahan Pemasangan XOOPS</title>
+<meta content="XOOPS" name="keywords"/>
+<meta content="XOOPS installation guide" name="description"/>
+<style type="text/css">
+        body {
+            font-family:                        Lucida Grande, Verdana, Geneva, Sans-serif;
+            margin:                             0;
+            padding:                            0;
+            font-size:                          13px;
+            color:                              #333;
+            background-color:                   #fff;
+        }
+
+        a {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+            font-weight:                        normal;
+        }
+
+        a:visited {
+            color:                              #3D9DD3;
+            background-color:                   transparent;
+            text-decoration:                    none;
+        }
+
+        a:hover {
+            color:                              #3D9DD3;
+            text-decoration:                    none;
+            background-color:                   transparent;
+        }
+
+        .page {
+            background-color:                   #fff;
+            margin:                             10px 30px 0;
+            padding:                            0;
+        }
+
+        .page h1 {
+            background-color:                   transparent;
+            border-bottom:                      1px solid #999;
+            color:                              #000;
+            font-size:                          18px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h2 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          16px;
+            font-weight:                        bold;
+            margin:                             28px 0 16px 0;
+            padding:                            5px 0 6px 0;
+        }
+
+        .page h3 {
+            background-color:                   transparent;
+            color:                              #000;
+            font-size:                          14px;
+            font-weight:                        bold;
+        }
+
+        .page ul {
+            margin:                             20px 0 15px 0;
+        }
+
+        .page li {
+            margin-bottom:                      9px;
+        }
+
+        .page li p {
+            margin-left:                        0;
+            margin-right:                       0;
+        }
+
+        p {    }
+
+    </style>
+</head>
+<body>
+<div class="page">
+<h1>Memasang XOOPS</h1>
+<h2>Pemasangan kali pertama</h2>
+<h3>Prakata:</h3>
+<p>
+<abbr title="eXtensible Object-Oriented Portal System">XOOPS</abbr> ialah sumber terbuka
+        Sistem penerbitan Web Berorientasikan Objek yang ditulis dalam PHP. Ia adalah alat yang ideal untuk
+        membangunkan laman web komuniti dinamik kecil hingga besar, portal intra syarikat, portal korporat, weblog dan banyak lagi.
+    </p>
+<p>
+        XOOPS dikeluarkan di bawah terma
+        <a href="https://www.gnu.org/licenses/gpl-2.0.html" rel="external">Lesen Awam Am GNU (GPL)</a>
+        versi 2 atau lebih tinggi, dan percuma untuk digunakan dan diubah suai.
+        Ia adalah percuma untuk mengagihkan semula selagi anda mematuhi syarat pengedaran GPL.
+    </p>
+<h2>Keperluan</h2>
+<ul>
+<li>Pelayan WWW (<a href="http://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external" s="">NGINX</a>, IIS, dsb)</li>
+<li><a href="https://www.php.net/" rel="external">PHP</a> 8.2 atau lebih tinggi, 8.4+ disyorkan</li>
+<li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.7 .8 atau lebih tinggi, MySQL 8.4.5+ disyorkan</li>
+</ul>
+<h3>Sebelum anda memasang</h3>
+<ol>
+<li>Sediakan pelayan WWW, PHP dan pelayan pangkalan data dengan betul.</li>
+<li>Sediakan pangkalan data untuk tapak XOOPS anda.</li>
+<li>Sediakan akaun pengguna dan berikan pengguna akses kepada pangkalan data.</li>
+<li>Jadikan direktori dan fail boleh ditulis: %s</li>
+<li>Untuk pertimbangan keselamatan, anda dinasihatkan untuk mengalih keluar dua direktori di bawah <a href="http://phpsec.org/projects/guide/3.html" rel="external">akar dokumen</a> dan tukar nama folder: %s</li>
+<li>Cipta (jika belum ada) dan jadikan direktori boleh ditulis: %s</li>
+<li>Hidupkan kuki dan JavaScript pelayar anda.</li>
+</ol>
+<h2>Memasang secara setempat</h2>
+<p>Jika anda menjalankan persekitaran tempatan untuk pembangunan atau ujian, pastikan anda mempunyai persekitaran sebelumnya
+    keperluan dipenuhi. Setelah ini selesai, salin kandungan <em>htdocs</em> direktori (daripada XOOPS
+    fail pengedaran) ke laluan dokumen akar persekitaran web anda. Setelah fail disalin di sana,
+    anda boleh memulakan pemasangan dengan menghalakan pelayar anda ke "http://<em>laman web anda.com</em>". Ini akan memulakan proses pemasangan.
+</p>
+<h2>Memasang pada platform yang dihoskan</h2>
+<p>Jika anda menjalankan dalam persekitaran yang dihoskan, buka pek fail XOOPS secara setempat atau pada pelayan jika anda mempunyai
+    akses shell (iaitu SSH). Setelah selesai, pastikan anda mengalihkan atau menyalin semua fail XOOPS daripada fail <em>htdocs</em>
+    direktori ke direktori web akar anda (pembekal anda biasanya menyediakan lokasi ini dengan arah).
+    Setelah fail disalin di sana, anda boleh memulakan pemasangan dengan menghalakan penyemak imbas anda
+    "http://<em>laman web anda.com</em>". Ini akan memulakan proses pemasangan.
+</p>
+<h2>Meneruskan pemasangan</h2>
+<p>Cuma ikut arahan langkah demi langkah dalam pemasang.</p>
+</div>
+</body>
+</html>
