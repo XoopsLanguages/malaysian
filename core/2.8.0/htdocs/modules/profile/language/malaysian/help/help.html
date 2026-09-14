@@ -1,0 +1,50 @@
+<div class="outer" id="help-template">
+<h1 class="head">Bantuan: <a class="ui-corner-all tooltip" href="&lt;{$xoops_url}&gt;/modules/profile/admin/index.php" title="Back to the Administration of Profile"> Profil <img alt="Back to the Administration of Profile" src="&lt;{xoAdminIcons 'home.png'}&gt;"/></a></h1>
+ -----Kandungan Bantuan ---------- 
+<h4 class="odd">PENERANGAN</h4>
+<p class="even">Modul Profil adalah untuk mengurus medan profil pengguna tersuai.</p>
+<h4 class="odd">PASANG/NYAHPASANG</h4>
+<p>Tiada langkah khas perlu, ikut proses pemasangan standard – ekstrak folder /profile ke dalam direktori ../modules. Pasang modul melalui Pentadbir -&gt; Modul Sistem -&gt; Modul.</p>
+<p>Arahan terperinci tentang memasang modul tersedia dalam <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="XOOPS Operations Manual">Manual Operasi XOOPS</a> <br/><br/></p>
+<h4 class="odd">ARAHAN OPERASI</h4>
+<p class="even">Untuk menyediakan modul ini anda perlu:</p>
+<ul>
+<li>Konfigurasikan pilihan anda untuk modul (lihat 'Keutamaan') dan secara pilihan blok Profil jika anda berhasrat untuk menggunakannya (lihat 'Blok').</li>
+<li>Edit Kategori sedia ada atau tambah yang baharu.</li>
+<li>Edit Medan sedia ada atau tambah yang baharu. Di sini anda boleh menentukan medan mana yang akan kelihatan dalam kategori mana, dan jika ia akan kelihatan semasa pendaftaran pengguna.</li>
+<li>Tentukan susunan langkah Pendaftaran.</li>
+<li>Dan akhirnya, anda boleh menetapkan kebenaran untuk medan individu - yang mana boleh diedit, yang mana boleh dicari.<br/><br/></li>
+</ul>
+<h4 class="odd">Langkah anti-Spam</h4>
+<p class="even">Untuk meminimumkan pendaftaran spam, lakukan perkara berikut:</p>
+<ul>
+<li> pergi ke modul Pelindung dalam Pentadbir, pergi ke Keutamaan, dan kemudian di bahagian bawah, pada pilihan ini:
+
+            "Hentikan Spam Forum"
+            Menyemak data POST terhadap pengirim spam yang didaftarkan pada pangkalan data www.stopforumspam.com. <br/>
+            Tetapkannya kepada "Haramkan IP (tiada had)"
+        </li>
+<br/>
+<li> dalam /class/captcha/config.php, pastikan mod ditetapkan sebagai "teks":<br/><br/>
+<span style="font-style: italic;">     return $config = array(<br/>
+    'disabled' =&gt; false, // Lumpuhkan CAPTCHA<br/>
+    'mode' =&gt; 'teks', // mod lalai, anda boleh memilih 'teks', 'imej', 'recaptcha'(memerlukan kunci api)<br/>
+    'name' =&gt; 'xoopscatcha', // nama captcha<br/>
+    'skipmember' =&gt; true, // Langkau semakan CAPTCHA untuk ahli<br/>
+    'maxattempts' =&gt; 10, // Percubaan maksimum untuk setiap sesi<br/>
+    );</span></li>
+<br/>
+<li> Dalam modul Profil, pergi ke Pentadbir dan dalam langkah Asas yang terletak di:<br/>
+
+            /modules/profile/admin/step.php?id=1<br/>
+
+            tetapkan "Simpan selepas berhenti" kepada "Tidak"
+        </li>
+<br/><br/>
+<li> Dalam Keutamaan Profil, tetapkan Pilihan "Gunakan Captcha selepas langkah Pendaftaran kedua" kepada "Ya" (ia adalah lalai)</li>
+<br/>
+<ul>
+<h4 class="odd">TUTORIAL</h4>
+<p class="even">Tutorial akan datang tidak lama lagi.<br/></p>
+ -----Kandungan Bantuan ---------- 
+</ul></ul></div>

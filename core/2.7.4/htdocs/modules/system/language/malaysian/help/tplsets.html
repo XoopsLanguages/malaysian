@@ -1,0 +1,36 @@
+<div class="outer" id="help-template">
+<h1 class="head">Bantuan: Templat</h1>
+<h4 class="odd">Penerangan</h4>
+<p class="even">
+        XOOPS membenarkan beberapa pemisahan antara persembahan sebenar tapak ("<em>kulit</em>” atau antara muka pengguna) dan kod yang berjalan di belakang. Yang pertama dikendalikan oleh mekanisme yang canggih berdasarkan tema grafik. Tema mungkin termasuk, dalam bentuk asasnya, HTML penting
+        templat yang mentakrifkan antara muka visual tapak, serta helaian gaya dan imej yang diperlukan untuk melengkapkan antara muka visual tersebut. Tema boleh ditukar dalam antara muka pentadbiran, jadi menukar keseluruhan penampilan tapak XOOPS itu hanyalah masalah menukar nilai sesuatu
+        pemilih dan klik pada "Terima". XOOPS juga menyediakan pentadbir tapak dengan keupayaan untuk membenarkan pengguna memilih antara beberapa tema yang tersedia.<br/><br/>
+
+        Secara umumnya, a <strong><em>tema</em></strong> ialah rangka kerja visual tahap tinggi tapak: tema mentakrifkan, contohnya, reka letak umum tapak; sebaliknya, ia biasanya tidak mentakrifkan pengedaran khusus kandungan dalam blok. Ini dikendalikan oleh a
+        entiti yang berbeza dipanggil a <em><strong>set templat</strong></em>. Set templat<em> </em>ialah ensemble templat HTML yang mentakrifkan persembahan kandungan dalam semua blok yang membentuk Laman Web XOOPS. Jika kita mahukan metafora yang lebih jelas untuk ini, kita boleh mengatakan bahawa temanya adalah seperti
+        arkitek rumah, manakala set templat adalah seperti penghias dalaman. Yang pertama menetapkan dinding dan mentakrifkan pengedaran umum, tetapi yang kedua yang bertanggungjawab ke atas "<em>berpakaian</em>” dinding itu.<br/><br/>
+
+        Jika tema aktif ialah tema ringkas yang hanya merangkumi fail tema, fail CSS dan beberapa imej, XOOPS menggunakan set templat lalai untuk mentakrifkan pembentangan blok. Walau bagaimanapun, beberapa tema kompleks cukup canggih untuk memasukkan set templat mereka sendiri. Dalam kes ini, tapak
+        pentadbir mesti menggunakan antara muka pentadbiran untuk menetapkan kedua-dua tema dan set templat. <br/><br/>
+
+        Bagaimana temanya <em>sihir</em> berjaya? Iaitu, bagaimanakah templat HTML boleh memasukkan kandungan dinamik? Ini dilakukan bukan dengan cermin dan asap, tetapi dengan enjin templat pintar yang dipanggil
+        <strong><a href="https://www.smarty.net/" rel="external">Smarty</a></strong> yang menjadikan fungsi apa yang dipanggil dahulu
+        <em><strong>interpolasi pembolehubah</strong></em>. Dinyatakan dengan cara yang mudah, kita boleh mengatakan bahawa sistem XOOPS menggunakan fail PHP untuk memegang logik modul (akses kepada pangkalan data, peruntukan pembolehubah, pengurusan hak...), fail HTML dengan pembolehubah Smarty yang dimasukkan untuk mengurus
+        antara muka visual sebenar, dan enjin Smarty untuk memasukkan nilai dan rentetan di tempat tertentu dalam HTML yang membina halaman yang dilihat oleh pengguna akhir. Secara keseluruhannya, maksud ini kepada anda boleh diringkaskan dengan mudah: terima kasih kepada sistem temanya, XOOPS membolehkan pereka tapak membina lebih banyak
+        laman web yang menarik dan menakjubkan secara visual tanpa mengambil berat tentang apa yang berlaku di bawah hud.
+    </p>
+<h4 class="odd">Mengklon dan memuat turun set templat</h4>
+<p class="even">
+        Jika anda ingin mencipta set templat tersuai, anda boleh membuat salinan set lalai (atau mana-mana yang lain) dengan memilih '<em>klon</em>’ (anda akan digesa untuk memberikan nama set baharu). Tidak seperti lalai, set templat lain boleh diedit secara bebas. Anda juga boleh menyimpan salinan a
+        templat ditetapkan pada cakera dengan memilih ‘<em>muat turun</em>’ pautan, atau alih keluarnya dengan ‘<em>padam</em>pautan. Anda mungkin juga kadangkala melihat tambahan '<em>Jana</em>’ pautan di sebelah modul baharu yang templatnya masih belum dibuat.
+    </p>
+<h4 class="odd">Mengedit templat</h4>
+<p class="even">
+        Anda boleh melihat senarai penuh templat yang tersedia dengan menyemak imbas treeview direktori. Apabila anda memilih templat, XOOPS akan membukanya dalam editor di mana anda boleh mengeditnya. <br/><br/>
+
+        Semasa mengedit templat anda mesti mendayakan keutamaan yang mengemas kini fail .tpl templat modul secara automatik jika terdapat fail yang lebih baharu di bawah direktori tema/tema/templat anda untuk tema semasa (Modul Sistem -&gt; Keutamaan -&gt; Tetapan Umum -&gt; Kemas kini templat modul .tpl fail
+        daripada direktori tema/tema/templat anda? -&gt; ‘<em>Ya</em>’). Ini harus dimatikan sebaik sahaja tapak menjadi umum.<br/><br/>
+        Jika anda secara tidak sengaja merosakkan templat, jangan lupa bahawa anda boleh mendapatkan semula '<em>bagus</em>’ salinan daripada set templat lalai. Jika anda bekerja dengan templat bukan standard mungkin idea yang baik untuk menyimpan salinan ke cakera sebelum anda mula mengubah suainya.
+
+    </p>
+</div>

@@ -1,0 +1,147 @@
+<?php
+/**
+ * @copyright       (c) 2000-2026 XOOPS Project (https://xoops.org)
+ * @license             GNU GPL 2 (https://www.gnu.org/licenses/gpl-2.0.html)
+ * _LANGCODE    ms
+ * _CHARSET     UTF-8
+ */
+define('_AM_SYSTEM_USERS_NAV_MAIN', 'Pengurusan Pengguna');
+define('_AM_SYSTEM_USERS_NAV_ADVANCED_SEARCH', 'Carian Lanjutan');
+define('_AM_SYSTEM_USERS_NAV_ADD_USER', 'Tambah Pengguna');
+define('_AM_SYSTEM_USERS_NAV_EDIT_USER', 'Edit Pengguna');
+define('_AM_SYSTEM_USERS_NAV_DELETE_USER', 'Padam Pengguna');
+define('_AM_SYSTEM_USERS_NAV_TIPS', '
+<ul>
+<li>Urus pengguna XOOPS</li>
+</ul>');
+define('_AM_SYSTEM_USERS_USER', 'Pengguna');
+define('_AM_SYSTEM_USERS_ADMIN', 'Pentadbir');
+define('_AM_SYSTEM_USERS_UID', 'ID pengguna');
+define('_AM_SYSTEM_USERS_STATUS', 'Status');
+define('_AM_SYSTEM_USERS_NAME', 'Nama');
+define('_AM_SYSTEM_USERS_UNAME', 'Nama Pengguna');
+define('_AM_SYSTEM_USERS_EMAIL', 'E-mel');
+define('_AM_SYSTEM_USERS_EDIT_GROUPS', 'Edit kumpulan');
+define('_AM_SYSTEM_USERS_REG_DATE', 'Tarikh daftar');
+define('_AM_SYSTEM_USERS_LAST_LOGIN', 'Log Masuk Terakhir');
+define('_AM_SYSTEM_USERS_POSTS', 'Ulasan/Siaran');
+define('_AM_SYSTEM_USERS_LEVEL', 'Tahap');
+define('_AM_SYSTEM_USERS_ACTION', 'Tindakan');
+define('_AM_SYSTEM_USERS_FINDUS', 'Cari Pengguna');
+define('_AM_SYSTEM_USERS_AVATAR', 'Avatar');
+define('_AM_SYSTEM_USERS_REALNAME', 'Nama Sebenar');
+define('_AM_SYSTEM_USERS_REGDATE', 'Tarikh Pendaftaran');
+define('_AM_SYSTEM_USERS_PM', 'PM');
+define('_AM_SYSTEM_USERS_URL', 'URL Web');
+define('_AM_SYSTEM_USERS_PREVIOUS', 'Sebelumnya');
+define('_AM_SYSTEM_USERS_NEXT', 'Seterusnya');
+define('_AM_SYSTEM_USERS_ACTUS', 'Pengguna aktif: %s');
+define('_AM_SYSTEM_USERS_INACTUS', 'Pengguna tidak aktif: %s');
+define('_AM_SYSTEM_USERS_NOFOUND', 'Tiada Pengguna Dijumpai');
+define('_AM_SYSTEM_USERS_ICQ', 'Nombor ICQ');
+define('_AM_SYSTEM_USERS_AIM', 'Pautan AIM');
+define('_AM_SYSTEM_USERS_YIM', 'Pautan YIM');
+define('_AM_SYSTEM_USERS_FACEBOOK', 'Pautan Facebook');
+define('_AM_SYSTEM_USERS_SKYPE', 'Pautan Skype');
+define('_AM_SYSTEM_USERS_MSNM', 'Pautan MSNM');
+define('_AM_SYSTEM_USERS_TIMEZONE', 'Zon Masa');
+define('_AM_SYSTEM_USERS_SHOWSIG', 'Sentiasa lampirkan tandatangan saya');
+define('_AM_SYSTEM_USERS_CDISPLAYMODE', 'Mod paparan ulasan');
+define('_AM_SYSTEM_USERS_CSORTORDER', 'Susunan pengisihan ulasan');
+define('_AM_SYSTEM_USERS_EXTRAINFO', 'Maklumat tambahan');
+define('_AM_SYSTEM_USERS_LOCATION', 'Lokasi');
+define('_AM_SYSTEM_USERS_OCCUPATION', 'Jawatan');
+define('_AM_SYSTEM_USERS_INTEREST', 'Minat');
+define('_AM_SYSTEM_USERS_URLC', 'URL mengandungi');
+define('_AM_SYSTEM_USERS_LOCATIONC', 'Lokasi mengandungi');
+define('_AM_SYSTEM_USERS_OCCUPATIONC', 'Jawatan mengandungi');
+define('_AM_SYSTEM_USERS_INTERESTC', 'Minat mengandungi');
+define('_AM_SYSTEM_USERS_LASTLOGMORE', "Log masuk terakhir lebih daripada <span style='color:#ff0000;'>X</span> hari yang lalu");
+define('_AM_SYSTEM_USERS_LASTLOGLESS', "Log masuk terakhir kurang daripada <span style='color:#ff0000;'>X</span> hari yang lalu");
+define('_AM_SYSTEM_USERS_REGMORE', "Tarikh menyertai lebih daripada <span style='color:#ff0000;'>X</span> hari yang lalu");
+define('_AM_SYSTEM_USERS_REGLESS', "Tarikh penyertaan kurang daripada <span style='color:#ff0000;'>X</span> hari yang lalu");
+define('_AM_SYSTEM_USERS_POSTSMORE', "Bilangan Siaran lebih besar daripada <span style='color:#ff0000;'>X</span>");
+define('_AM_SYSTEM_USERS_POSTSLESS', "Bilangan Siaran kurang daripada <span style='color:#ff0000;'>X</span>");
+define('_AM_SYSTEM_USERS_SORT', 'Isih mengikut');
+define('_AM_SYSTEM_USERS_ORDER', 'Susunan');
+define('_AM_SYSTEM_USERS_LASTLOGIN', 'Log Masuk Terakhir');
+define('_AM_SYSTEM_USERS_ASC', 'Menaik');
+define('_AM_SYSTEM_USERS_DESC', 'Menurun');
+define('_AM_SYSTEM_USERS_LIMIT', 'Bilangan pengguna setiap halaman');
+define('_AM_SYSTEM_USERS_RESULTS', 'Keputusan carian');
+define('_AM_SYSTEM_USERS_SHOWMAILOK', 'Jenis pengguna untuk ditunjukkan');
+define('_AM_SYSTEM_USERS_MAILOK', 'Hanya pengguna yang menerima e-mel');
+define('_AM_SYSTEM_USERS_MAILNG', 'Hanya pengguna yang tidak menerima e-mel');
+define('_AM_SYSTEM_USERS_SHOWTYPE', 'Jenis pengguna untuk ditunjukkan');
+define('_AM_SYSTEM_USERS_ACTIVE', 'Hanya pengguna aktif');
+define('_AM_SYSTEM_USERS_INACTIVE', 'Hanya pengguna tidak aktif');
+define('_AM_SYSTEM_USERS_BOTH', 'Semua pengguna');
+define('_AM_SYSTEM_USERS_SENDMAIL', 'Hantar e-mel');
+define('_AM_SYSTEM_USERS_ADD2GROUP', 'Tambah pengguna ke kumpulan %s');
+define('_AM_SYSTEM_USERS_GROUPS', 'Kumpulan');
+define('_AM_SYSTEM_USERS_ADD_GROUPS', 'Tambah kumpulan');
+define('_AM_SYSTEM_USERS_DELETE_GROUPS', 'Padam Kumpulan');
+define('_AM_SYSTEM_USERS_AYSYWTDU', 'Adakah anda pasti mahu memadam pengguna %s?');
+define('_AM_SYSTEM_USERS_BYTHIS', 'Dengan berbuat demikian semua maklumat pengguna ini akan dibuang secara kekal.');
+define('_AM_SYSTEM_USERS_YES', 'Ya');
+define('_AM_SYSTEM_USERS_NO', 'Tidak');
+define('_AM_SYSTEM_USERS_YMCACF', 'Anda mesti melengkapkan semua medan yang diperlukan');
+define('_AM_SYSTEM_USERS_CNRNU', 'Tidak dapat mendaftarkan pengguna baharu.');
+define('_AM_SYSTEM_USERS_EDEUSER', 'Edit/Padam Pengguna');
+define('_AM_SYSTEM_USERS_NICKNAME', 'Nama Pengguna');
+define('_AM_SYSTEM_USERS_ADDUSER', 'Tambah pengguna');
+define('_AM_SYSTEM_USERS_OPTION', 'Pilihan');
+define('_AM_SYSTEM_USERS_THEME', 'Tema');
+define('_AM_SYSTEM_USERS_AOUTVTEAD', 'Benarkan pengguna lain melihat alamat e-mel ini');
+define('_AM_SYSTEM_USERS_RANK', 'Pangkat');
+define('_AM_SYSTEM_USERS_NSRA', 'Tiada pangkat khas ditetapkan');
+define('_AM_SYSTEM_USERS_NSRID', 'Tiada Pangkat Khas dalam Pangkalan Data');
+define('_AM_SYSTEM_USERS_ACCESSLEV', 'Tahap akses');
+define('_AM_SYSTEM_USERS_SIGNATURE', 'Tandatangan');
+define('_AM_SYSTEM_USERS_PASSWORD', 'Kata Laluan');
+define('_AM_SYSTEM_USERS_INDICATECOF', '* menunjukkan medan yang diperlukan');
+define('_AM_SYSTEM_USERS_NOTACTIVE', 'Pengguna ini belum diaktifkan. Adakah anda ingin mengaktifkan pengguna ini?');
+define('_AM_SYSTEM_USERS_UPDATEUSER', 'Kemaskini pengguna');
+define('_AM_SYSTEM_USERS_USERINFO', 'Maklumat pengguna');
+define('_AM_SYSTEM_USERS_USERID', 'ID pengguna');
+define('_AM_SYSTEM_USERS_RETYPEPD', 'Taipkan semula kata laluan');
+define('_AM_SYSTEM_USERS_SYNCHRONIZE', 'Segerakkan');
+define('_AM_SYSTEM_USERS_USERDONEXIT', 'Pengguna tidak wujud!');
+define('_AM_SYSTEM_USERS_STNPDNM', 'Kata laluan baharu tidak sepadan. Klik balik dan cuba lagi');
+define('_AM_SYSTEM_USERS_PWDEQUALSUNAME', 'Kata laluan tidak boleh sama dengan nama pengguna.');
+define('_AM_SYSTEM_USERS_CNUUSER', 'Tidak dapat mengemas kini pengguna');
+define('_AM_SYSTEM_USERS_CNGUSERID', 'Tidak dapat mendapatkan ID pengguna');
+define('_AM_SYSTEM_USERS_NOUSERS', 'Tiada pengguna dipilih');
+define('_AM_SYSTEM_USERS_CNRNU2', 'Pengguna baru tidak dapat ditambah ke kumpulan: %s.');
+define('_AM_SYSTEM_USERS_SEARCH', 'Cari');
+define('_AM_SYSTEM_USERS_SEARCH_USER', 'Cari pengguna:');
+define('_AM_SYSTEM_USERS_ADVANCED_SEARCH', 'Carian Lanjutan');
+define('_AM_SYSTEM_USERS_EDIT', 'Edit ahli');
+define('_AM_SYSTEM_USERS_DEL', 'Padam ahli');
+define('_AM_SYSTEM_USERS_DELETE', 'Padam');
+define('_AM_SYSTEM_USERS_SUBMIT', 'Hantar');
+define('_AM_SYSTEM_USERS_PURGE', 'Bersih');
+define('_AM_SYSTEM_USERS_ADD', 'Tambah ahli');
+define('_AM_SYSTEM_USERS_VIEW', 'Lihat maklumat ahli');
+define('_AM_SYSTEM_USERS_NOT_CONNECT', 'Tidak pernah bersambung');
+define('_AM_SYSTEM_USERS_FORM_SURE_DEL', 'Padam pengguna: %s');
+define('_AM_SYSTEM_USERS_FORM_SURE_DEL2', 'Padam');
+define('_AM_SYSTEM_USERS_NO_SUPP', 'Pengguna tidak boleh dipadam: %s <br>');
+define('_AM_SYSTEM_USERS_NO_ADMINSUPP', 'Pengguna admin tidak boleh dipadam: %s <br>');
+define('_AM_SYSTEM_USERS_ERROR', 'Ralat:<br><br> %s');
+define('_AM_SYSTEM_USERS_ALLGROUP', 'Semua kumpulan');
+define('_AM_SYSTEM_USERS_ALLUSER', 'Semua pengguna');
+define('_AM_SYSTEM_USERS_ACTIVEUSER', 'Hanya pengguna aktif');
+define('_AM_SYSTEM_USERS_INACTIVEUSER', 'Hanya pengguna tidak aktif');
+define('_AM_SYSTEM_USERS_PSEUDO_ERROR', 'Nama pengguna %s sudah wujud');
+define('_AM_SYSTEM_USERS_MAIL_ERROR', 'E-mel pengguna %s sudah wujud');
+define('_AM_SYSTEM_USERS_ACCEPT_EMAIL', 'Terima e-mel dari Admin');
+define('_AM_SYSTEM_USERS_UNKNOWN_GROUP', 'Kumpulan tidak diketahui');
+
+//2.7.1 backfilled translations
+define('_AM_SYSTEM_USERS_CHANGEONLY', '(untuk perubahan sahaja)');
+define('_AM_SYSTEM_USERS_NO_FOUND', 'Tiada pengguna ditemui');
+define('_AM_SYSTEM_USERS_USERSFOUND', '%s pengguna ditemui');
+
+//2.7.4
+define('_AM_SYSTEM_USERS_NO_SUCH_USER', 'Tiada pengguna sedemikian');
